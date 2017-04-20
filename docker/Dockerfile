@@ -109,7 +109,8 @@ wget -P /build/software/nodejs https://nodejs.org/dist/v6.10.0/node-v6.10.0-linu
 && rm /build/software/nodejs/node-v6.10.0-linux-x64.tar.xz
 
 RUN \
-apt-get install icnsutils
+apt-get install icnsutils \
+&& apt-get install graphicsmagick
 
 ENV PATH=$PATH:/build/software/nodejs/node-v6.10.0-linux-x64/bin
 
