@@ -108,6 +108,9 @@ wget -P /build/software/nodejs https://nodejs.org/dist/v6.10.0/node-v6.10.0-linu
 && tar -xvf /build/software/nodejs/node-v6.10.0-linux-x64.tar.xz --directory /build/software/nodejs \
 && rm /build/software/nodejs/node-v6.10.0-linux-x64.tar.xz
 
+RUN \
+apt-get install icnsutils
+
 ENV PATH=$PATH:/build/software/nodejs/node-v6.10.0-linux-x64/bin
 
 RUN \
